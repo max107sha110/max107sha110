@@ -11,6 +11,7 @@ I used copilot and supabase for login to make a record-tracking app for an NPO (
 
 
 ## Related experience
+I learnt coding with cs50 and with the help of Dr. [Martin Pieters](https://djmpinstitute.org/#builders)
 In middle school, I was the top scorer in LAUSD and 2nd in online nationals.
 
 ## What I’m learning next
