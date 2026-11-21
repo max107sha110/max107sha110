@@ -23,5 +23,3 @@ Using AI to analyze the mechanics of a golf swing.
 [![Last commit to my-first-repo](https://img.shields.io/github/last-commit/max107sha110/my-first-repo?style=flat-square&logo=github)](https://github.com/max107sha110/my-first-repo/commits) · [See commit history](https://github.com/max107sha110/my-first-repo/commits)
 
 
-- ⚡ Fun fact: ...
--->
