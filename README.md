@@ -20,6 +20,6 @@ Using AI to analyze the mechanics of a golf swing.
 
 [![Git commit history](https://img.shields.io/badge/Git-commits-185a48?style=for-the-badge&logo=git&logoColor=white)](https://github.com/max107sha110/my-third-repo/commits) [![Markdown project README](https://img.shields.io/badge/Markdown-README-40516c?style=for-the-badge&logo=markdown&logoColor=white)](https://github.com/max107sha110/my-third-repo#readme) [![JavaScript project](https://img.shields.io/badge/JavaScript-project-703d68?style=for-the-badge&logo=javascript&logoColor=white)](<https://github.com/max107sha110/Volunteer-Hours-Record>)
 
-[![Last commit to my-first-repo](https://img.shields.io/github/last-commit/max107sha110/my-first-repo?style=flat-square&logo=github)](https://github.com/max107sha110/my-first-repo/commits) · [See commit history](https://github.com/max107sha110/my-first-repo/commits)
+[![Last commit to my-third-repo](https://img.shields.io/github/last-commit/max107sha110/my-third-repo?style=flat-square&logo=github)](https://github.com/max107sha110/my-first-repo/commits) · [See commit history](https://github.com/max107sha110/my-third-repo/commits)
 
 
