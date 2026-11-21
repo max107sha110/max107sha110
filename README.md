@@ -1,16 +1,27 @@
-## Hi there 👋
+![Max | Decent Golfer](./profile-banner.svg)
 
-<!--
-**max107sha110/max107sha110** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Hi, I’m Max
 
-Here are some ideas to get you started:
+I play golf.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
+## Featured project
+[Volunteer Hour Record](<https://github.com/max107sha110/Volunteer-Hours-Record>)
+
+I used copilot and supabase for login to make a record-tracking app for an NPO (projects can be used for other orgs).
+
+
+## Related experience
+In middle school, I was the top scorer in LAUSD and 2nd in online nationals.
+
+## What I’m learning next
+Using AI to analyze the mechanics of a golf swing.
+
+## My toolbox
+
+[![Git commit history](https://img.shields.io/badge/Git-commits-185a48?style=for-the-badge&logo=git&logoColor=white)](https://github.com/max107sha110/my-first-repo/commits) [![Markdown project README](https://img.shields.io/badge/Markdown-README-40516c?style=for-the-badge&logo=markdown&logoColor=white)](https://github.com/max107sha110/my-first-repo#readme) [![JavaScript project](https://img.shields.io/badge/JavaScript-project-703d68?style=for-the-badge&logo=javascript&logoColor=white)](<https://github.com/max107sha110/Volunteer-Hours-Record>)
+
+[![Last commit to my-first-repo](https://img.shields.io/github/last-commit/max107sha110/my-first-repo?style=flat-square&logo=github)](https://github.com/max107sha110/my-first-repo/commits) · [See commit history](https://github.com/max107sha110/my-first-repo/commits)
+
+
 - ⚡ Fun fact: ...
 -->
