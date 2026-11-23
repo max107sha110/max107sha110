@@ -7,7 +7,7 @@ I play golf.
 ## Featured project
 [Volunteer Hour Record](<https://github.com/max107sha110/Volunteer-Hours-Record>)
 
-I used copilot and supabase for login to make a record-tracking app for an NPO (projects can be used for other orgs).
+I used copilot and supabase for login/authentication to make a record-tracking app for an NPO (projects can be used for other orgs).
 
 
 ## Related experience
