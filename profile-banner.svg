@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="180" viewBox="0 0 840 180" role="img" aria-labelledby="title desc">
   <title id="title">Max — Decent Golfer</title>
-  <desc id="desc">A golf-themed banner with a fairway, flag, golf ball, and club</desc>
+  <desc id="desc">An animated golf-themed banner with waving flag, rolling ball, drifting clouds, and a pulsing hole</desc>
 
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
@@ -16,6 +16,18 @@
 
   <g clip-path="url(#frame)">
     <rect width="840" height="180" fill="url(#sky)"/>
+
+    <!-- soft drifting clouds -->
+    <g fill="#ffffff" opacity=".72">
+      <g transform="translate(130 48)">
+        <circle cx="0" cy="7" r="10"/><circle cx="12" cy="1" r="14"/><circle cx="27" cy="8" r="10"/>
+        <animateTransform attributeName="transform" type="translate" from="130 48" to="840 48" dur="32s" repeatCount="indefinite"/>
+      </g>
+      <g transform="translate(510 32)" opacity=".65">
+        <circle cx="0" cy="7" r="8"/><circle cx="10" cy="2" r="12"/><circle cx="22" cy="8" r="8"/>
+        <animateTransform attributeName="transform" type="translate" values="510 32;-100 32;510 32" keyTimes="0;.5;1" dur="38s" repeatCount="indefinite"/>
+      </g>
+    </g>
 
     <!-- rolling fairway -->
     <path d="M0 116 C110 88 205 101 300 120 C430 146 535 92 650 101 C730 107 785 128 840 116 L840 180 L0 180 Z" fill="url(#fairway)"/>
@@ -36,27 +48,49 @@
       <text x="69" y="122" fill="#d7efad" font-size="20" font-weight="650" letter-spacing="1.4">DECENT GOLFER</text>
     </g>
 
-    <!-- golf hole and flag -->
-    <ellipse cx="690" cy="136" rx="43" ry="9" fill="#315d48" opacity=".5"/>
+    <!-- pulsing hole and waving flag -->
+    <ellipse cx="690" cy="136" rx="43" ry="9" fill="#315d48" opacity=".5">
+      <animate attributeName="rx" values="43;51;43" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".5;.25;.5" dur="2.4s" repeatCount="indefinite"/>
+    </ellipse>
     <ellipse cx="690" cy="132" rx="18" ry="5" fill="#1b3328"/>
     <rect x="688" y="69" width="4" height="64" rx="2" fill="#f7f4e8"/>
-    <path d="M692 73 C715 69 729 77 741 83 C728 91 712 93 692 96 Z" fill="#f4e8a1"/>
+    <path d="M692 73 C715 69 729 77 741 83 C728 91 712 93 692 96 Z" fill="#f4e8a1">
+      <animate attributeName="d" dur="1.8s" repeatCount="indefinite"
+        values="M692 73 C715 69 729 77 741 83 C728 91 712 93 692 96 Z;
+                M692 73 C708 78 726 85 741 79 C730 88 712 89 692 91 Z;
+                M692 73 C715 69 729 77 741 83 C728 91 712 93 692 96 Z"/>
+    </path>
 
-    <!-- golf ball and dimples -->
-    <g transform="translate(610 122)">
-      <circle r="10" fill="#fffdf4" stroke="#d2d8cc" stroke-width="1.5"/>
-      <circle cx="-3" cy="-3" r="1.2" fill="#cad0c4"/><circle cx="3" cy="-3" r="1.2" fill="#cad0c4"/>
-      <circle cx="0" cy="3" r="1.2" fill="#cad0c4"/><circle cx="-5" cy="2" r="1" fill="#cad0c4"/><circle cx="5" cy="2" r="1" fill="#cad0c4"/>
+    <!-- golf ball rolls across the fairway and pauses at the hole -->
+    <g>
+      <circle cx="555" cy="122" r="10" fill="#fffdf4" stroke="#d2d8cc" stroke-width="1.5"/>
+      <g fill="#cad0c4">
+        <circle cx="552" cy="119" r="1.2"/><circle cx="558" cy="119" r="1.2"/>
+        <circle cx="555" cy="125" r="1.2"/><circle cx="550" cy="124" r="1"/><circle cx="560" cy="124" r="1"/>
+      </g>
+      <animateTransform attributeName="transform" type="translate"
+        values="0 0;105 0;135 -2;135 -2"
+        keyTimes="0;.65;.78;1"
+        dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;1;1;1" dur="5s" repeatCount="indefinite"/>
     </g>
 
-    <!-- crossed club hints -->
-    <g transform="rotate(-16 748 130)" fill="none" stroke="#102b32" stroke-linecap="round">
-      <path d="M738 146 C741 126 748 104 754 78" stroke-width="5"/>
-      <path d="M754 78 L765 62" stroke-width="6"/>
-      <path d="M761 59 C766 55 773 57 778 62 C773 68 767 70 761 68 Z" fill="#102b32" stroke="none"/>
+    <!-- rotating club -->
+    <g transform="translate(748 130)">
+      <g transform="rotate(-16)">
+        <animateTransform attributeName="transform" type="rotate" values="-16;-28;-16" dur="2.2s" repeatCount="indefinite"/>
+        <g fill="none" stroke="#102b32" stroke-linecap="round">
+          <path d="M0 16 C3 -4 10 -26 16 -52" stroke-width="5"/>
+          <path d="M16 -52 L27 -68" stroke-width="6"/>
+        </g>
+        <path d="M23 -71 C28 -75 35 -73 40 -68 C35 -62 29 -60 23 -62 Z" fill="#102b32"/>
+      </g>
     </g>
 
-    <!-- subtle motion arc -->
-    <path d="M600 106 C622 84 646 82 669 91" fill="none" stroke="#f7fbf5" stroke-width="2" stroke-dasharray="4 7" opacity=".75"/>
+    <!-- subtle motion arc follows the ball -->
+    <path d="M560 106 C590 82 625 82 652 91" fill="none" stroke="#f7fbf5" stroke-width="2" stroke-dasharray="4 7" opacity=".75">
+      <animate attributeName="stroke-dashoffset" from="22" to="0" dur="1.2s" repeatCount="indefinite"/>
+    </path>
   </g>
 </svg>
